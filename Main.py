@@ -17,10 +17,10 @@ class Queue:
 
   def dequeue(self) -> None:
     # Write your code here
-    if((self.head != None) and (self.head!=self.last)): 
-      temp = self.head
-      self.head = temp.next
-      temp.next = None
+    if self.head == None:
+      pass
+    else:
+      self.head = self.head.next
 
   def status(self) -> None:
     # Write your code here
