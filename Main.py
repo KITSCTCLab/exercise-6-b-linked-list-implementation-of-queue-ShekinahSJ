@@ -24,15 +24,11 @@ class Queue:
 
   def status(self) -> None:
     # Write your code here
-    if(self.head != None):
-      temp = self.head
-      while(temp.next != None):
-        print(temp.data, end = "=>")
-        temp = temp.next
-      else:
-        print(temp.data,"None", sep="=>")
-    else:
-      print("None")
+    temp = self.head
+    while temp!= None:
+      print(temp.data, "=>", sep="", end = "")
+      temp = temp.next
+    print("None")
 
 
 # Do not change the following code
