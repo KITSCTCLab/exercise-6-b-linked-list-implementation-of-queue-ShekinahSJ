@@ -12,7 +12,7 @@ class Queue:
   def enqueue(self, data) -> None:
     # Write your code here
     new_node = Node(data)
-    new_node.next = self.tail
+    new_node.next = self.last
     self.last = new_node
 
   def dequeue(self) -> None:
